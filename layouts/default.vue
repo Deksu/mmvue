@@ -1,12 +1,24 @@
 <template>
   <div>
+    <customHeader2/>
     <nuxt/>
   </div>
 </template>
 
+
+<script>
+import customHeader2 from '@/components/customHeader2'
+export default {
+  components: {
+    customHeader2
+  }
+}
+</script>
+
+
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Work Sans", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

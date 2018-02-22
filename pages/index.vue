@@ -12,11 +12,14 @@
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="button--green">Documentation</a>
+          class="button--green">Docs</a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey">GitHub</a>
+        <a
+          href="/test"
+          class="button--grey">Test page</a>
       </div>
     </div>
   </section>
