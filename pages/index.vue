@@ -1,67 +1,91 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        mmvue
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Docs</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-        <a
-          href="/test"
-          class="button--grey">Test page</a>
+  <section class="main-container">
+      <customHeader2/>
+      <div class="img-container">
       </div>
-    </div>
+      <div class="info-container">
+        <div class="text-container-left">
+          <a name="info" id="infoArea"></a><p>A goldsmith originating from Lapland, Finland. My designs largely reflect elements and shapes from the rich,
+               beautiful northern nature. To balance this, some of my designs get inspired from the rugged landscapes and
+                shapes of the land.</p>
+                <br>
+                <br>
+                <p>You can read more about my work and my life from my bio.</p>
+        </div>
+            <div class="text-container-right">
+                <p>Keep scrolling to view my work. My contact information can be found from my bio. I also post images of
+                     my work on my instagram account, check it by clicking the icon below.</p>
+
+                     <a href="http://www.instagram.com/mattimikaeli/" target="_blank" id="insta-icon"><img src="~/static/insta-icon.svg" alt="instagram-icon"></a>
+            </div>
+      </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
-  components: {
-    AppLogo
-  }
+  methods: {
+      scrollFix: function(hashbang) {
+          location.href = hashbang;
+      }
+}
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+
+<style scoped>
+
+.main-container {
+    background-color: #fff;
+    z-index: 1;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.img-container {
+    min-height: 100vh;
+    background-image: url('~/static/mm-sormus.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.info-container {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
 }
 
-.links {
-  padding-top: 15px;
+.info-container p {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
 }
+.text-container-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 60vh;
+    padding: 0px 10px 0px 20px;
+
+}
+
+.text-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: center;
+    text-align: center;
+    align-items: flex-end;
+    width: 50%;
+    height: 80vh;
+    padding: 0px 20px 0px 10px;
+}
+
+#insta-icon {
+    align-self: center;
+    padding: 40px 5px 0px 5px;
+}
+
 </style>

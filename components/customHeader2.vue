@@ -5,7 +5,7 @@
         </div>
     <nav>
         <ul>
-            <li><nuxt-link to="#info">info</nuxt-link></li>
+            <li @click.native="scrollFix('#infoArea')" ><nuxt-link to="/#infoArea">info</nuxt-link></li>
             <li><nuxt-link to="/">collection</nuxt-link></li>
             <li><nuxt-link to="/">bio</nuxt-link></li>
         </ul>

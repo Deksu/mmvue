@@ -7,16 +7,19 @@
 
 
 <script>
-import customHeader2 from '@/components/customHeader2'
+import customHeader2 from '~/components/customHeader2.vue'
 export default {
   components: {
     customHeader2
   }
 }
+
 </script>
 
 
 <style>
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans:300');
+
 html {
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 16px;
@@ -31,34 +34,5 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>

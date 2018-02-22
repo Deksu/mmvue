@@ -1,9 +1,23 @@
 module.exports = {
+  generate: {
+    fallback: true
+  },
+  router: { 
+    scrollBehavior: function (to, from, savedPosition) {
+      if (to.hash) {
+        return { selector: to.hash }
+      } else if (savedPosition) {
+        return savedPosition;
+      } else {
+        return { x: 0, y: 0 }
+      }
+      }
+  },
   /*
   ** Headers of the page
   */
   head: {
-    title: 'mmvue',
+    title: 'mattimarin - goldsmith',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
