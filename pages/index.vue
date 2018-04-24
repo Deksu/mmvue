@@ -1,6 +1,5 @@
 <template>
   <section class="main-container">
-      <customHeader2/>
       <div class="img-container">
       </div>
       <div class="info-container">
@@ -53,9 +52,10 @@ export default {
     display: flex;
     flex: 1;
     min-height: 100vh;
+    padding: 1em;
 }
 
-.info-container p {
+.info-container, .text-container p {
     font-size: 1.2em;
     letter-spacing: 0.1em;
 }
@@ -67,7 +67,8 @@ export default {
     align-items: flex-start;
     width: 50%;
     height: 60vh;
-    padding: 0px 10px 0px 20px;
+    /* padding: 0px 10px 0px 20px; */
+    padding: 2em;
 
 }
 
@@ -80,7 +81,8 @@ export default {
     align-items: flex-end;
     width: 50%;
     height: 80vh;
-    padding: 0px 20px 0px 10px;
+    /* padding: 0px 20px 0px 10px; */
+    padding: 2em;
 }
 
 #insta-icon {

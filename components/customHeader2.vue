@@ -1,7 +1,7 @@
 <template>
 <header>
         <div class="header-logo">
-            <img src="https://i.imgur.com/p88lOp0.png" alt="img-logo">
+            <a href="/"><img src="~/static/mattimarin-headerimg.png" alt="img-logo"></a>
         </div>
     <nav>
         <ul>

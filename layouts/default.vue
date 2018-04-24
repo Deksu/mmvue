@@ -2,15 +2,22 @@
   <div>
     <customHeader2/>
     <nuxt/>
+    <Gallery/>
+    <Bio/>
   </div>
 </template>
 
 
 <script>
 import customHeader2 from '~/components/customHeader2.vue'
+import Gallery from '~/components/Gallery.vue'
+import Bio from '~/components/Bio.vue'
+
 export default {
   components: {
-    customHeader2
+    customHeader2,
+    Gallery,
+    Bio
   }
 }
 
