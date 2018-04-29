@@ -3,8 +3,8 @@
       <div class="img-container">
       </div>
       <div class="info-container">
-        <div class="text-container-left">
-          <a name="info" id="infoArea"></a><p>A goldsmith originating from Lapland, Finland. My designs largely reflect elements and shapes from the rich,
+        <div class="text-container-left" id="infoArea">
+          <p>A goldsmith originating from Lapland, Finland. My designs largely reflect elements and shapes from the rich,
                beautiful northern nature. To balance this, some of my designs get inspired from the rugged landscapes and
                 shapes of the land.</p>
                 <br>
@@ -16,6 +16,7 @@
                      my work on my instagram account, check it by clicking the icon below.</p>
 
                      <a href="http://www.instagram.com/mattimikaeli/" target="_blank" id="insta-icon"><img src="~/static/insta-icon.svg" alt="instagram-icon"></a>
+                     <!-- Adding new scroll -->
             </div>
       </div>
   </section>
