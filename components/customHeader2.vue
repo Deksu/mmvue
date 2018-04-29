@@ -5,9 +5,12 @@
         </div>
     <nav>
         <ul>
-            <li @click.native="scrollFix('#infoArea')" ><nuxt-link to="/#infoArea">info</nuxt-link></li>
-            <li><nuxt-link to="/">collection</nuxt-link></li>
-            <li><nuxt-link to="/">bio</nuxt-link></li>
+            <!-- <li @click.native="scrollFix('#infoArea')" ><nuxt-link to="/#infoArea">info</nuxt-link></li> -->
+            <li><a href="#info" v-smooth-scroll="{ duration: 2000, offset: 0 }">info</a></li>
+            <!-- <li><nuxt-link to="/">collection</nuxt-link></li> -->
+            <li><a href="#gallery" v-smooth-scroll>collection</a></li>
+            <!-- <li><nuxt-link to="/">bio</nuxt-link></li> -->
+            <li><a href="#bio" v-smooth-scroll>bio</a></li>
         </ul>
     </nav>
 </header>

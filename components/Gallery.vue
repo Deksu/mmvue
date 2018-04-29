@@ -1,5 +1,5 @@
 <template>
-<div class="gallery-container">
+<div class="gallery-container" id="gallery">
 
     <div class="image-container" v-for="image in images" :key="image.id"><img :src="`gallery/${image.img}`">
     </div>

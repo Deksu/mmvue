@@ -27,6 +27,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  plugins: ['~/plugins/vue-smooth-scroll'],
   /*
   ** Customize the progress bar color
   */

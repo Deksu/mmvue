@@ -1,5 +1,5 @@
 <template>
-<div class="bio-container">
+<div class="bio-container" id="bio">
     <div class="text-container">
 
         <h2>Bio</h2>

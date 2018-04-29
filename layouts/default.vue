@@ -13,6 +13,7 @@ import customHeader2 from '~/components/customHeader2.vue'
 import Gallery from '~/components/Gallery.vue'
 import Bio from '~/components/Bio.vue'
 
+
 export default {
   components: {
     customHeader2,

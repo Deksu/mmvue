@@ -2,8 +2,8 @@
   <section class="main-container">
       <div class="img-container">
       </div>
-      <div class="info-container">
-        <div class="text-container-left" id="infoArea">
+      <div class="info-container" id="info">
+        <div class="text-container-left">
           <p>A goldsmith originating from Lapland, Finland. My designs largely reflect elements and shapes from the rich,
                beautiful northern nature. To balance this, some of my designs get inspired from the rugged landscapes and
                 shapes of the land.</p>
