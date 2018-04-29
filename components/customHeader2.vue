@@ -5,6 +5,8 @@
         </div>
     <nav>
         <ul>
+            <!-- Commented out original nuxt links, replaced by vue-smooth-scroll links" -->
+            
             <!-- <li @click.native="scrollFix('#infoArea')" ><nuxt-link to="/#infoArea">info</nuxt-link></li> -->
             <li><a href="#info" v-smooth-scroll="{ duration: 2000, offset: 0 }">info</a></li>
             <!-- <li><nuxt-link to="/">collection</nuxt-link></li> -->
