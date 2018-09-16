@@ -1,15 +1,14 @@
 <template>
 <div class="gallery-container" id="gallery">
-    <AwesomeSwiperFade/>
+    <AwesomeSwiper/>
 </div>
 </template>
 
 <script>
-
-import AwesomeSwiperFade from '~/components/AwesomeSwiperFade.vue'
+import AwesomeSwiper from '~/components/AwesomeSwiper.vue'
 export default {
     components: {
-        AwesomeSwiperFade
+        AwesomeSwiper
     }
 }
 </script>

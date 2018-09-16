@@ -1,15 +1,24 @@
 <template>
+<!-- /* Contains the backup of the original gallery */ -->
+
 <div class="gallery-container" id="gallery">
-    <AwesomeSwiperFade/>
+
+    <div class="image-container" v-for="image in images" :key="image.id"><img :src="`gallery/${image.img}`">
+    </div>
+           
+           
 </div>
 </template>
 
 <script>
-
-import AwesomeSwiperFade from '~/components/AwesomeSwiperFade.vue'
 export default {
-    components: {
-        AwesomeSwiperFade
+    data () {
+        return {
+            images: [
+                { img: 'wedding-rings-1-compressed-v2.png',
+                id: 1 }
+            ]
+        }
     }
 }
 </script>
@@ -20,14 +29,14 @@ export default {
     min-height: 100vh;
     background-color: #eee;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
     margin: auto;
 }
 
-/* .image-container {
+.image-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,13 +45,12 @@ export default {
     background-color: #666;
     min-height: 70vh;
     min-width: 75vw;
-} */
+}
 
 /* placeholder, fix img size later */
-
-/* .image-container img {
+.image-container img {
     width: 750px;
     height: 400px;
     margin: 2em;
-} */
+}
 </style>

@@ -1,11 +1,11 @@
 <template>
   <div class="header-container">
       <div class="header-logo">
-          <img src="https://i.imgur.com/p88lOp0.png" alt="img-logo">
+          <img src="~/static/mattimarin-headerimg.png" alt="img-logo">
       </div>
       <div class="header-nav">
           <a href="#info">info</a>
-          <a href="#collection">collection</a>
+          <a href="#gallery">collection</a>
           <a href="#bio">bio</a>
       </div>
   </div>

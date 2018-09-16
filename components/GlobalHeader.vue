@@ -8,6 +8,7 @@
             
             <!-- <li><nuxt-link to="/#info">info</nuxt-link></li> -->
             <li><a href="#info">info</a></li>
+            <button type="button" :class="{active:index ==1}" @click="moveTo(2)">Second page</button>
             <!-- <li><nuxt-link to="/#collection">collection</nuxt-link></li> -->
             <li><a href="#gallery">collection</a></li>
             <!-- <li><nuxt-link to="/bio">bio</nuxt-link></li> -->
@@ -19,10 +20,32 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            index: 0,
+            opts: {
+                start: 0,
+                dir: 'v',
+                duration: 500,
+                beforeChange: function(ele, current, next) {
+                    console.log('before', current, next)
+                    this.index = next;
+                },
+                afterChange: function(ele, current) {
+                    this.index = current;
+                    console.log('after', current)
+                }
+            }
+        }
+  },
+  methods: {
+        moveTo: function(index) {
+            this.$refs.fullpage.$fullpage.moveTo(index, true);
+        }
+  
+}
 }
 </script>
-
 
 
 <style scoped>

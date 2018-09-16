@@ -3,15 +3,6 @@ module.exports = {
     fallback: true
   },
   router: { 
-    scrollBehavior: function (to, from, savedPosition) {
-      if (to.hash) {
-        return { selector: to.hash }
-      } else if (savedPosition) {
-        return savedPosition;
-      } else {
-        return { x: 0, y: 0 }
-      }
-      }
   },
   /*
   ** Headers of the page
@@ -27,12 +18,19 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  plugins: ['~/plugins/vue-smooth-scroll', '~/plugins/vue-scroll'],
+  plugins: [
+    {src: '~/plugins/fullpage-vue', ssr: false},
+    { src: '~/plugins/vue-awesome-swiper', ssr: false },
+  ],
 
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
+  css: [
+    'swiper/dist/css/swiper.css'
+  ],
   /*
   ** Build configuration
   */
